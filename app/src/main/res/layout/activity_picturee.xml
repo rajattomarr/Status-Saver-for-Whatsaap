@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="#fdf9f3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Picturee">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/particularimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/components">
+
+        </ImageView>
+        <LinearLayout
+            android:id="@+id/components"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="#ffe8e8">
+
+
+            <ImageView
+                android:id="@+id/chatapp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/sschatapplogo"
+                />
+            <ImageView
+                android:id="@+id/download"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/download"
+                />
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/share"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
